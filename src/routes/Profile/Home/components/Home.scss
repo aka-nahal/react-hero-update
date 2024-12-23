@@ -1,0 +1,107 @@
+.dashboard-content {
+  .table-cell-name {
+    position: relative;
+    padding-right: 35px;
+
+    >i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .hiddenInput {
+      display: none;
+    }
+
+    &.editableFocus>div {
+      outline: 1px solid #ddd;
+      outline-offset: 2px;
+    }
+  }
+
+  .legends-wrapper {
+    margin-top: 20px;
+
+    >ul {
+      list-style: none;
+
+      >li {
+        margin-top: 10px;
+
+        >span {
+          position: relative;
+          top: 5px;
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+        }
+
+        &:first-child>span {
+          background: #26a69a;
+        }
+
+        &:last-child>span {
+          background: #5bc0de;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .chart-wrapper {
+    >div {
+      min-height: 75px;
+
+      h2 {
+        margin: 10px 0;
+      }
+
+      &:first-child {
+        display: flex;
+        align-items: center;
+
+        >h2 {
+          margin: 0;
+        }
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid #ddd;
+      }
+    }
+
+    @media (max-width: 768px) {
+      >div:not(:last-child) {
+        border-right: none;
+      }
+    }
+  }
+
+  .stats-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 -5px;
+
+    div {
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px), (max-width: 425px) {
+      display: block;
+      text-align: left;
+
+      div {
+        display: block;
+      }
+    }
+  }
+}

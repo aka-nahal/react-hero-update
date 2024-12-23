@@ -1,0 +1,66 @@
+pre {
+  &.prettyprint {
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+
+    &.linenums {
+      padding: 8px;
+      background-color: #f7f7f9;
+      border: 1px solid #e1e1e8;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+
+      ol.linenums {
+        margin: 0 0 0 33px;
+        padding: 0;
+
+        li {
+          padding-left: 12px;
+          color: #bebec5;
+          line-height: 20px;
+          text-shadow: 0 1px 0 #fff;
+          display: list-item;
+          text-align: -webkit-match-parent;
+
+          .tabbed {
+            margin-left: 25px;
+            display: block;
+          }
+
+          .htm {
+            color: #4D134C;
+          }
+
+          .htm-atv {
+            color: #A73B4B;
+          }
+
+          .pln {
+            color: #48484c;
+          }
+
+          .met {
+            color: #DD11C5;
+          }
+
+          .tag {
+            color: #1e347b;
+          }
+
+          .atn {
+            color: teal;
+          }
+
+          .pun {
+            color: #6464FF;
+          }
+
+          .atv {
+            color: #D14;
+          }
+        }
+      }
+    }
+  }
+}

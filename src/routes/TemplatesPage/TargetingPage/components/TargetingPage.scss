@@ -1,0 +1,128 @@
+:global {
+  #target-tabs .nav-tabs {
+    margin-bottom: 0;
+  }
+
+  .signup-modal.access-section {
+    padding: 0 10px 15px;
+  }
+}
+
+.targeting-panel-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.target-tab-wrapper {
+
+  .target-input-number {
+    width: 70px;
+  }
+
+  :global {
+    .nav-tabs>li {
+      flex: initial;
+      width: 15%;
+      background: #fafafa;
+
+      a > span > i.remove {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        font-size: 18px;
+      }
+
+      &:last-child {
+        width: 10%;
+
+        >a {
+          padding: 15px 0;
+          background: #fff;
+        }
+      }
+
+      &.active {
+        background: #fff;
+
+        &:first-child {
+          border-left-color: #ddd;
+        }
+      }
+    }
+  }
+
+  .main-tab-panel {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    .add-button {
+      padding: 0;
+      height: 27px;
+      width: 27px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .target-tab-wrapper {
+    :global {
+      .nav-tabs > li {
+        width: 20%;
+
+        &:last-child {
+          width: 15%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .target-tab-wrapper {
+    :global {
+      .nav-tabs {
+        padding: 0;
+
+        >li {
+          flex: 1;
+          background: #fafafa;
+          border-top: none;
+          border-bottom: none;
+
+          &.active {
+            background: #fff;
+
+            >a {
+              background: #fff;
+              padding-top: 15px;
+
+              &:after {
+                background: none;
+              }
+            }
+
+            &:first-child {
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+
+    .main-tab-panel {
+      border-top: none;
+    }
+  }
+}
+
+:global {
+  .instructions p .example {
+    color: #666;
+  }
+
+  .mail-services-examples {
+    color: #666;
+    font-style: italic;
+    font-size: 13px;
+  }
+}

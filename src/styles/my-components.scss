@@ -1,0 +1,79 @@
+.date-period {
+  .react-datepicker__input-container {
+    width: calc(50% - 25px);
+  }
+
+  .dash {
+    width: 15px;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+  }
+
+  i.fa {
+    width: 15px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+  }
+}
+
+
+.no-items-placeholder {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: rgba(55, 71, 79, 0.05);
+
+  h4 {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.tab-pills-nav > li {
+  margin-bottom: 5px;
+
+  &.active {
+
+    >a {
+      background: #63b418;
+
+      &:focus, &:hover {
+        background: #63b418;
+      }
+    }
+  }
+
+  >a {
+    font-size: 18px;
+
+    &:hover {
+      background: rgba(99, 180, 24, 0.1);
+    }
+  }
+}
+
+.installation-content-wrapper {
+  display: table-row;
+
+  .platform-content, .platform-nav-wrapper {
+    display: table-cell;
+  }
+}
+
+.platform-content {
+  padding-left: 20px;
+}
+
+.platform-nav-wrapper {
+  min-width: 250px;
+  padding-right: 20px;
+  border-right: 1px solid grey;
+
+  h3 {
+    margin-top: 5px;
+  }
+}

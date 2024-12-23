@@ -1,0 +1,23 @@
+.template-wrapper {
+  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-20%);
+  position: absolute;
+  width: 600px;
+
+  .template-wrapper-inner {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    padding: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .template-wrapper {
+    transform: translateX(-50%);
+  }
+}

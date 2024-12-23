@@ -1,0 +1,48 @@
+.activeRoute {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  :global {
+    .navbar-left {
+      font-size: 19px;
+
+      >li {
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-header {
+    position: relative;
+
+    :global {
+      .navbar-left {
+        display: none;
+      }
+
+      .navbar-collapse {
+        position: static;
+        margin: 0;
+      }
+
+      .container-fluid {
+        padding: 0;
+
+        >.navbar-header {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.pace-done {
+  color: #333333;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.page-not-found {
+  background: url('../static/background/bg-header-2.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .container {
+
+    h4 {
+      text-transform: capitalize;
+      font-size: 36px;
+      color: white;
+    }
+
+    p > a {
+      font-size: 22px;
+      text-decoration: none;
+    }
+  }
+}
+
+.logo-img {
+  height: 45px;
+}
+
+@media (min-width: 769px) {
+  .choose-template-sidebar.sidebar {
+    width: 225px;
+  }
+}
+
+.react-datepicker__day--in-range:not(.react-datepicker__day--selected) {
+  background-color: #66CAC0;
+
+  &:hover {
+    background-color: #5dbab0;
+  }
+
+  &.react-datepicker__day--disabled:hover {
+    background-color: #66CAC0;
+  }
+}
+
+.react-datepicker__day--selected {
+  background-color: #26a69a !important;
+}
+
+.pagination {
+  li a {
+    margin-left: 0 !important;
+  }
+
+  & > .active > a {
+    background-color: #009688 !important;
+  }
+
+  & > li:not(.active) > a {
+    color: #009688 !important;
+
+    &:hover, &:focus {
+      background-color: #eee !important;
+    }
+  }
+}
+
+.instructions {
+
+  margin-left: 20px;
+
+  p {
+    font-style: italic;
+    font-size: 13px;
+    color: #458419;
+    font-weight: 400;
+  }
+}
+
+#example {
+  color: #666666;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.standout {
+  font-weight: 600;
+  color: #458419;
+}
+
+.pricing .item {
+  padding: 0;
+  border-radius: 4px;
+  background-clip: padding-box;
+  box-shadow: 0 4px 1px rgba(0, 0, 0, .05);
+  margin-bottom: 30px;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 20%;
+
+  a.btn-cta {
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

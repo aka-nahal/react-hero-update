@@ -1,0 +1,44 @@
+.campaign-stats-content {
+
+  .campaign-stats-wrapper {
+    >div {
+      min-height: 75px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #ddd;
+      }
+
+      h2 {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.legends-wrapper {
+  margin-top: 20px;
+
+  >ul {
+    list-style: none;
+
+    >li {
+      margin-top: 10px;
+
+      >span {
+        position: relative;
+        top: 5px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
+
+      &:first-child>span {
+        background: #26a69a;
+      }
+
+      &:last-child>span {
+        background: #5bc0de;
+      }
+    }
+  }
+}
